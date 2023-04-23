@@ -62,6 +62,7 @@
 		C3343C6929F5741700E08FFE = {
 			isa = PBXGroup;
 			children = (
+				C3343C8E29F5749900E08FFE /* .gitignore */,
 				C3343C7429F5741700E08FFE /* MyMnemonicDB */,
 				C3343C7329F5741700E08FFE /* Products */,
 			);
@@ -83,7 +84,6 @@
 				C3343C8B29F5746000E08FFE /* Presentation */,
 				C3343C8A29F5744B00E08FFE /* Resources */,
 				C3343C8929F5742000E08FFE /* Application */,
-				C3343C8E29F5749900E08FFE /* .gitignore */,
 			);
 			path = MyMnemonicDB;
 			sourceTree = "<group>";

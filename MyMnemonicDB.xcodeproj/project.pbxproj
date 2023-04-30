@@ -24,6 +24,24 @@
 		C3343CAA29F5757E00E08FFE /* CustomTextField in Frameworks */ = {isa = PBXBuildFile; productRef = C3343CA929F5757E00E08FFE /* CustomTextField */; };
 		C3343CB029F576F300E08FFE /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CAF29F576F300E08FFE /* NavigationController.swift */; };
 		C3343CB229F5779400E08FFE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CB129F5779400E08FFE /* MainView.swift */; };
+		C3343CB729FD5F4C00E08FFE /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = C3343CB629FD5F4C00E08FFE /* PopupView */; };
+		C3343CBD29FD5F8800E08FFE /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CBA29FD5F8800E08FFE /* ImageButton.swift */; };
+		C3343CBE29FD5F8800E08FFE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CBB29FD5F8800E08FFE /* CustomButton.swift */; };
+		C3343CBF29FD5F8800E08FFE /* CustomViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CBC29FD5F8800E08FFE /* CustomViewer.swift */; };
+		C3343CC129FD5FA900E08FFE /* FileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CC029FD5FA900E08FFE /* FileListView.swift */; };
+		C3343CC429FD5FAE00E08FFE /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CC329FD5FAE00E08FFE /* PopupView.swift */; };
+		C3343CC629FD5FBA00E08FFE /* MnemonicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CC529FD5FBA00E08FFE /* MnemonicView.swift */; };
+		C3343CCC29FD5FD300E08FFE /* MnemonicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CC829FD5FD300E08FFE /* MnemonicViewModel.swift */; };
+		C3343CCD29FD5FD300E08FFE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CC929FD5FD300E08FFE /* MainViewModel.swift */; };
+		C3343CCE29FD5FD300E08FFE /* PopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CCB29FD5FD300E08FFE /* PopupViewModel.swift */; };
+		C3343CD229FD601100E08FFE /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CD029FD601100E08FFE /* Color+Extension.swift */; };
+		C3343CD329FD601100E08FFE /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CD129FD601100E08FFE /* Font+Extension.swift */; };
+		C3343CD529FD601500E08FFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CD429FD601500E08FFE /* Constants.swift */; };
+		C3343CD829FD64BB00E08FFE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C3343CD729FD64BB00E08FFE /* SnapKit */; };
+		C3343CDC29FD667300E08FFE /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CDB29FD667300E08FFE /* BaseView.swift */; };
+		C3343CE029FD67B900E08FFE /* KitCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CDF29FD67B900E08FFE /* KitCustomButton.swift */; };
+		C3423D3529FEB9BB00F881B6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3423D3429FEB9BB00F881B6 /* MainViewController.swift */; };
+		C3423D3829FEBE6F00F881B6 /* MnemonicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3423D3729FEBE6F00F881B6 /* MnemonicCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +61,22 @@
 		C3343C9F29F5753D00E08FFE /* FolderRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderRepository.swift; sourceTree = "<group>"; };
 		C3343CAF29F576F300E08FFE /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		C3343CB129F5779400E08FFE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C3343CBA29FD5F8800E08FFE /* ImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		C3343CBB29FD5F8800E08FFE /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		C3343CBC29FD5F8800E08FFE /* CustomViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewer.swift; sourceTree = "<group>"; };
+		C3343CC029FD5FA900E08FFE /* FileListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListView.swift; sourceTree = "<group>"; };
+		C3343CC329FD5FAE00E08FFE /* PopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		C3343CC529FD5FBA00E08FFE /* MnemonicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MnemonicView.swift; sourceTree = "<group>"; };
+		C3343CC829FD5FD300E08FFE /* MnemonicViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MnemonicViewModel.swift; sourceTree = "<group>"; };
+		C3343CC929FD5FD300E08FFE /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		C3343CCB29FD5FD300E08FFE /* PopupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewModel.swift; sourceTree = "<group>"; };
+		C3343CD029FD601100E08FFE /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		C3343CD129FD601100E08FFE /* Font+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		C3343CD429FD601500E08FFE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C3343CDB29FD667300E08FFE /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		C3343CDF29FD67B900E08FFE /* KitCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitCustomButton.swift; sourceTree = "<group>"; };
+		C3423D3429FEB9BB00F881B6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C3423D3729FEBE6F00F881B6 /* MnemonicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,9 +84,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3343CB729FD5F4C00E08FFE /* PopupView in Frameworks */,
 				C3343CA729F5756200E08FFE /* RealmSwift in Frameworks */,
 				C3343CAA29F5757E00E08FFE /* CustomTextField in Frameworks */,
 				C3343CA529F5756200E08FFE /* Realm in Frameworks */,
+				C3343CD829FD64BB00E08FFE /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +146,8 @@
 		C3343C8B29F5746000E08FFE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				C3343CB929FD5F7900E08FFE /* ReuseableView */,
+				C3343CB829FD5F7300E08FFE /* CustomView */,
 				C3343C9129F574E000E08FFE /* ViewModel */,
 				C3343C9029F574DB00E08FFE /* View */,
 				C3343C8C29F5746600E08FFE /* Storyboard */,
@@ -129,7 +167,9 @@
 		C3343C9029F574DB00E08FFE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C3343CB129F5779400E08FFE /* MainView.swift */,
+				C3423D3129FEB9A000F881B6 /* UIKit */,
+				C3343CD929FD662900E08FFE /* Main */,
+				C3343CC529FD5FBA00E08FFE /* MnemonicView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +177,8 @@
 		C3343C9129F574E000E08FFE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C3343CC729FD5FD300E08FFE /* Main */,
+				C3343CCA29FD5FD300E08FFE /* Popup */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,9 +230,123 @@
 		C3343CAC29F576B900E08FFE /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				C3343CDB29FD667300E08FFE /* BaseView.swift */,
 				C3343CAF29F576F300E08FFE /* NavigationController.swift */,
+				C3343CD429FD601500E08FFE /* Constants.swift */,
+				C3343CCF29FD601100E08FFE /* Extension */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		C3343CB829FD5F7300E08FFE /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				C3343CDE29FD678600E08FFE /* UIKit */,
+				C3343CDD29FD677900E08FFE /* SwiftUI */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		C3343CB929FD5F7900E08FFE /* ReuseableView */ = {
+			isa = PBXGroup;
+			children = (
+				C3343CC229FD5FAE00E08FFE /* Popup */,
+				C3343CC029FD5FA900E08FFE /* FileListView.swift */,
+			);
+			path = ReuseableView;
+			sourceTree = "<group>";
+		};
+		C3343CC229FD5FAE00E08FFE /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				C3343CC329FD5FAE00E08FFE /* PopupView.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		C3343CC729FD5FD300E08FFE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C3343CC829FD5FD300E08FFE /* MnemonicViewModel.swift */,
+				C3343CC929FD5FD300E08FFE /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C3343CCA29FD5FD300E08FFE /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				C3343CCB29FD5FD300E08FFE /* PopupViewModel.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		C3343CCF29FD601100E08FFE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C3343CD029FD601100E08FFE /* Color+Extension.swift */,
+				C3343CD129FD601100E08FFE /* Font+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C3343CD929FD662900E08FFE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C3423D3029FEB75800F881B6 /* UIKit */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C3343CDD29FD677900E08FFE /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				C3343CBC29FD5F8800E08FFE /* CustomViewer.swift */,
+				C3343CBA29FD5F8800E08FFE /* ImageButton.swift */,
+				C3343CBB29FD5F8800E08FFE /* CustomButton.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		C3343CDE29FD678600E08FFE /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C3343CDF29FD67B900E08FFE /* KitCustomButton.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C3423D3029FEB75800F881B6 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C3423D3129FEB9A000F881B6 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C3423D3329FEB9AD00F881B6 /* UIViewController */,
+				C3423D3229FEB9A900F881B6 /* UIView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C3423D3229FEB9A900F881B6 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				C3343CB129F5779400E08FFE /* MainView.swift */,
+				C3423D3729FEBE6F00F881B6 /* MnemonicCell.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		C3423D3329FEB9AD00F881B6 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C3423D3429FEB9BB00F881B6 /* MainViewController.swift */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +369,8 @@
 				C3343CA429F5756200E08FFE /* Realm */,
 				C3343CA629F5756200E08FFE /* RealmSwift */,
 				C3343CA929F5757E00E08FFE /* CustomTextField */,
+				C3343CB629FD5F4C00E08FFE /* PopupView */,
+				C3343CD729FD64BB00E08FFE /* SnapKit */,
 			);
 			productName = MyMnemonicDB;
 			productReference = C3343C7229F5741700E08FFE /* MyMnemonicDB.app */;
@@ -245,6 +403,8 @@
 			packageReferences = (
 				C3343CA329F5756200E08FFE /* XCRemoteSwiftPackageReference "realm-swift" */,
 				C3343CA829F5757E00E08FFE /* XCRemoteSwiftPackageReference "SwiftUI-Custom-TextField" */,
+				C3343CB529FD5F4C00E08FFE /* XCRemoteSwiftPackageReference "PopupView" */,
+				C3343CD629FD64BB00E08FFE /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = C3343C7329F5741700E08FFE /* Products */;
 			projectDirPath = "";
@@ -278,12 +438,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3343CA229F5753D00E08FFE /* FolderRepository.swift in Sources */,
+				C3423D3529FEB9BB00F881B6 /* MainViewController.swift in Sources */,
+				C3343CD529FD601500E08FFE /* Constants.swift in Sources */,
 				C3343CB229F5779400E08FFE /* MainView.swift in Sources */,
+				C3343CC629FD5FBA00E08FFE /* MnemonicView.swift in Sources */,
 				C3343CB029F576F300E08FFE /* NavigationController.swift in Sources */,
 				C3343C7629F5741700E08FFE /* AppDelegate.swift in Sources */,
+				C3343CCE29FD5FD300E08FFE /* PopupViewModel.swift in Sources */,
+				C3343CDC29FD667300E08FFE /* BaseView.swift in Sources */,
+				C3343CBE29FD5F8800E08FFE /* CustomButton.swift in Sources */,
+				C3343CE029FD67B900E08FFE /* KitCustomButton.swift in Sources */,
+				C3343CBF29FD5F8800E08FFE /* CustomViewer.swift in Sources */,
+				C3343CCC29FD5FD300E08FFE /* MnemonicViewModel.swift in Sources */,
+				C3343CBD29FD5F8800E08FFE /* ImageButton.swift in Sources */,
 				C3343CA129F5753D00E08FFE /* MnemonicRepository.swift in Sources */,
+				C3343CC129FD5FA900E08FFE /* FileListView.swift in Sources */,
 				C3343CA029F5753D00E08FFE /* Data.swift in Sources */,
+				C3423D3829FEBE6F00F881B6 /* MnemonicCell.swift in Sources */,
 				C3343C7829F5741700E08FFE /* SceneDelegate.swift in Sources */,
+				C3343CD329FD601100E08FFE /* Font+Extension.swift in Sources */,
+				C3343CD229FD601100E08FFE /* Color+Extension.swift in Sources */,
+				C3343CC429FD5FAE00E08FFE /* PopupView.swift in Sources */,
+				C3343CCD29FD5FD300E08FFE /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +697,22 @@
 				kind = branch;
 			};
 		};
+		C3343CB529FD5F4C00E08FFE /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		C3343CD629FD64BB00E08FFE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -538,6 +730,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C3343CA829F5757E00E08FFE /* XCRemoteSwiftPackageReference "SwiftUI-Custom-TextField" */;
 			productName = CustomTextField;
+		};
+		C3343CB629FD5F4C00E08FFE /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3343CB529FD5F4C00E08FFE /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+		C3343CD729FD64BB00E08FFE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3343CD629FD64BB00E08FFE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

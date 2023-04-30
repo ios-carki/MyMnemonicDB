@@ -42,6 +42,7 @@
 		C3343CE029FD67B900E08FFE /* KitCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3343CDF29FD67B900E08FFE /* KitCustomButton.swift */; };
 		C3423D3529FEB9BB00F881B6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3423D3429FEB9BB00F881B6 /* MainViewController.swift */; };
 		C3423D3829FEBE6F00F881B6 /* MnemonicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3423D3729FEBE6F00F881B6 /* MnemonicCell.swift */; };
+		C3423D3A29FED0DE00F881B6 /* SUMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3423D3929FED0DE00F881B6 /* SUMainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		C3343CDF29FD67B900E08FFE /* KitCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitCustomButton.swift; sourceTree = "<group>"; };
 		C3423D3429FEB9BB00F881B6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C3423D3729FEBE6F00F881B6 /* MnemonicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicCell.swift; sourceTree = "<group>"; };
+		C3423D3929FED0DE00F881B6 /* SUMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUMainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				C3423D3029FEB75800F881B6 /* UIKit */,
+				C3423D3929FED0DE00F881B6 /* SUMainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				C3343CA029F5753D00E08FFE /* Data.swift in Sources */,
 				C3423D3829FEBE6F00F881B6 /* MnemonicCell.swift in Sources */,
 				C3343C7829F5741700E08FFE /* SceneDelegate.swift in Sources */,
+				C3423D3A29FED0DE00F881B6 /* SUMainView.swift in Sources */,
 				C3343CD329FD601100E08FFE /* Font+Extension.swift in Sources */,
 				C3343CD229FD601100E08FFE /* Color+Extension.swift in Sources */,
 				C3343CC429FD5FAE00E08FFE /* PopupView.swift in Sources */,

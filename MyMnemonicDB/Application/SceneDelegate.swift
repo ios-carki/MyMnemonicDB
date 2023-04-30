@@ -14,24 +14,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var navController : NavigationController?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-//        navController = NavigationController()
-//
-//        let hostingController = UIHostingController(rootView: MainView(navigation: navController))
-//        navController?.pushViewController(hostingController, animated: true)
-//        guard let windowScene = (scene as? UIWindowScene) else { return }
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        window?.windowScene = windowScene
-//        window?.rootViewController = navController
-        //        window?.makeKeyAndVisible()
-        
-        guard let scene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: scene)
-        
-        let viewController = MainViewController()
-        let navigationController = UINavigationController(rootViewController: viewController)
-        
-        window?.rootViewController = navigationController
+        navController = NavigationController()
+
+        let hostingController = UIHostingController(rootView: SUMainView(navigation: navController))
+        navController?.pushViewController(hostingController, animated: true)
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.windowScene = windowScene
+        window?.rootViewController = navController
         window?.makeKeyAndVisible()
+        
+//        guard let scene = (scene as? UIWindowScene) else { return }
+//        window = UIWindow(windowScene: scene)
+//
+//        let viewController = MainViewController()
+//        let navigationController = UINavigationController(rootViewController: viewController)
+//
+//        window?.rootViewController = navigationController
+//        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

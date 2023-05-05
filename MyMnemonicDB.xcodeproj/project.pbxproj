@@ -43,6 +43,8 @@
 		C3423D3529FEB9BB00F881B6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3423D3429FEB9BB00F881B6 /* MainViewController.swift */; };
 		C3423D3829FEBE6F00F881B6 /* MnemonicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3423D3729FEBE6F00F881B6 /* MnemonicCell.swift */; };
 		C3423D3A29FED0DE00F881B6 /* SUMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3423D3929FED0DE00F881B6 /* SUMainView.swift */; };
+		C3423D3C2A05538400F881B6 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3423D3B2A05538400F881B6 /* View+Extension.swift */; };
+		C3423D422A05579000F881B6 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = C3423D412A05579000F881B6 /* BottomSheet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,7 @@
 		C3423D3429FEB9BB00F881B6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C3423D3729FEBE6F00F881B6 /* MnemonicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicCell.swift; sourceTree = "<group>"; };
 		C3423D3929FED0DE00F881B6 /* SUMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUMainView.swift; sourceTree = "<group>"; };
+		C3423D3B2A05538400F881B6 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3343CB729FD5F4C00E08FFE /* PopupView in Frameworks */,
+				C3423D422A05579000F881B6 /* BottomSheet in Frameworks */,
 				C3343CA729F5756200E08FFE /* RealmSwift in Frameworks */,
 				C3343CAA29F5757E00E08FFE /* CustomTextField in Frameworks */,
 				C3343CA529F5756200E08FFE /* Realm in Frameworks */,
@@ -288,6 +292,7 @@
 			children = (
 				C3343CD029FD601100E08FFE /* Color+Extension.swift */,
 				C3343CD129FD601100E08FFE /* Font+Extension.swift */,
+				C3423D3B2A05538400F881B6 /* View+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -374,6 +379,7 @@
 				C3343CA929F5757E00E08FFE /* CustomTextField */,
 				C3343CB629FD5F4C00E08FFE /* PopupView */,
 				C3343CD729FD64BB00E08FFE /* SnapKit */,
+				C3423D412A05579000F881B6 /* BottomSheet */,
 			);
 			productName = MyMnemonicDB;
 			productReference = C3343C7229F5741700E08FFE /* MyMnemonicDB.app */;
@@ -408,6 +414,7 @@
 				C3343CA829F5757E00E08FFE /* XCRemoteSwiftPackageReference "SwiftUI-Custom-TextField" */,
 				C3343CB529FD5F4C00E08FFE /* XCRemoteSwiftPackageReference "PopupView" */,
 				C3343CD629FD64BB00E08FFE /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C3423D402A05579000F881B6 /* XCRemoteSwiftPackageReference "BottomSheet" */,
 			);
 			productRefGroup = C3343C7329F5741700E08FFE /* Products */;
 			projectDirPath = "";
@@ -447,6 +454,7 @@
 				C3343CC629FD5FBA00E08FFE /* MnemonicView.swift in Sources */,
 				C3343CB029F576F300E08FFE /* NavigationController.swift in Sources */,
 				C3343C7629F5741700E08FFE /* AppDelegate.swift in Sources */,
+				C3423D3C2A05538400F881B6 /* View+Extension.swift in Sources */,
 				C3343CCE29FD5FD300E08FFE /* PopupViewModel.swift in Sources */,
 				C3343CDC29FD667300E08FFE /* BaseView.swift in Sources */,
 				C3343CBE29FD5F8800E08FFE /* CustomButton.swift in Sources */,
@@ -717,6 +725,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		C3423D402A05579000F881B6 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vitalybatrakov/BottomSheet.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -744,6 +760,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C3343CD629FD64BB00E08FFE /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		C3423D412A05579000F881B6 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3423D402A05579000F881B6 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import BottomSheet
+
 struct SUMainView: View {
     
     weak var navigation: NavigationController?
@@ -24,21 +26,14 @@ struct SUMainView: View {
                             .setImage("folder.fill.badge.plus")
                             .setTitle("폴더 추가")
                             .onTapGesture {
-                                viewModel.popupPresent = true
-                            }
-                            .overCurrentContext(isPresented: $viewModel.popupPresent) {
-                                return AnyView(PopupView(action: {
-                                    
+                                let delegate = BottomSheetTransitioningDelegate(configuration: .default)
+                                let vc = UIHostingController(rootView: PopupView(action: {
+                                    navigation?.dismiss(animated: true)
                                 }))
+                                vc.modalPresentationStyle = .custom
+                                vc.transitioningDelegate = delegate
+                                navigation?.present(vc, animated: true)
                             }
-
-
-//                        ImageButton()
-//                            .setImage("folder.fill.badge.plus")
-//                            .setTitle("폴더 추가")
-//                            .onTapGesture {
-//                                viewModel.popupPresent.toggle()
-//                            }
                         
                         Spacer()
                         
@@ -87,42 +82,6 @@ struct SUMainView: View {
             }
         }
         .navigationTitle("홈")
-    }
-}
-
-fileprivate var currentOverCurrentContextUIHost: UIHostingController<AnyView>? = nil
-
-extension View {
-    
-    public func overCurrentContext(
-        isPresented: Binding<Bool>,
-        showWithAnimation: Bool = false,
-        dismissWithAnimation: Bool = false,
-        modalTransitionStyle: UIModalTransitionStyle = .crossDissolve,
-        modalPresentationStyle: UIModalPresentationStyle = .overCurrentContext,
-        afterDismiss: (() -> Void)? = nil,
-        content: () -> AnyView
-    ) -> some View {
-        if isPresented.wrappedValue && currentOverCurrentContextUIHost == nil {
-            let uiHost = UIHostingController(rootView: content())
-            currentOverCurrentContextUIHost = uiHost
-            
-            uiHost.modalPresentationStyle = modalPresentationStyle
-            uiHost.modalTransitionStyle = modalTransitionStyle
-            uiHost.view.backgroundColor = UIColor.clear
-            
-            let rootVC = UIApplication.shared.windows.first?.rootViewController
-            rootVC?.present(uiHost, animated: showWithAnimation, completion: nil)
-            
-        } else {
-            if let uiHost = currentOverCurrentContextUIHost {
-                uiHost.dismiss(animated: dismissWithAnimation, completion: {})
-                currentOverCurrentContextUIHost = nil
-                afterDismiss?()
-            }
-        }
-        
-        return self
     }
 }
 

@@ -11,18 +11,16 @@ import CustomTextField
 
 struct PopupView: View {
     
+    weak var navigation: NavigationController?
+    
     @StateObject private var viewModel = PopupViewModel()
     
     //Dismiss
     var action : () -> ()
     
     var body: some View {
-        ZStack{
-            Color.black.opacity(0.3).ignoresSafeArea().onTapGesture {
-                action()
-                print("빈공간 눌림")
-            }
-            
+        ZStack {
+            Color.backgroundColor.ignoresSafeArea()
             VStack(spacing: 40){
                 VStack(spacing: 20){
                     Text("Create Folder")
@@ -42,20 +40,28 @@ struct PopupView: View {
                         .setTitleFont(.medium14())
                         .setTitleColor(.white)
                 }
-                CustomButton()
-                    .setType(type: .normal)
-                    .setTitle(title: "OK")
-                    .click {
-                        //MARK: 폴더이름 DB 저장
-                        viewModel.createFolder(folderName: viewModel.folderTitle)
-                        print("폴더이름 DB 저장 완료")
-                        action()
-                    }
-            }.padding(25)
-                .background(Color.textFieldBackgroundColor)
-                .cornerRadius(15)
-                .padding(25)
-                .padding(.bottom, 50)
+                HStack(alignment: .center, spacing: 12) {
+                    CustomButton()
+                        .setType(type: .normal)
+                        .setTitle(title: "OK")
+                        .click {
+                            //MARK: 폴더이름 DB 저장
+                            viewModel.createFolder(folderName: viewModel.folderTitle)
+                            print("폴더이름 DB 저장 완료")
+                            action()
+                        }
+                    
+                    CustomButton()
+                        .setType(type: .clear)
+                        .setTitle(title: "Cancel")
+                        .click {
+                            print("폴더이름 DB 저장 취소됨")
+                            action()
+                        }
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.top, 16)
         }
     }
 }

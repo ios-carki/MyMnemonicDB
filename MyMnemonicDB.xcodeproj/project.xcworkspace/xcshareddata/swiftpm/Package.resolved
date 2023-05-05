@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "bottomsheet",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vitalybatrakov/BottomSheet.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e49bb18e11566e29847f1f004c407fcf8b8d06c3"
+      }
+    },
+    {
       "identity" : "popupview",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/exyte/PopupView.git",

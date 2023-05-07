@@ -49,6 +49,7 @@ struct PopupView: View {
                             viewModel.createFolder(folderName: viewModel.folderTitle)
                             print("폴더이름 DB 저장 완료")
                             action()
+                            print("패치폴더 카운트: ", viewModel.folderRepo.fetchFolder().count)
                         }
                     
                     CustomButton()
@@ -57,6 +58,7 @@ struct PopupView: View {
                         .click {
                             print("폴더이름 DB 저장 취소됨")
                             action()
+                            print("패치폴더 카운트: ", viewModel.folderRepo.fetchFolder().count)
                         }
                 }
             }

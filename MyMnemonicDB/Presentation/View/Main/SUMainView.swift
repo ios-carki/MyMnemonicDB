@@ -46,6 +46,7 @@ struct SUMainView: View {
                         .frame(height: 2)
                         .overlay(Color.buttonBackgroundColor)
                     
+                    
                     ScrollView {
                         VStack(alignment: .leading, spacing: 14) {
                             HStack {
@@ -56,12 +57,13 @@ struct SUMainView: View {
                                 Spacer()
                             }
                             
-                            ForEach(0..<viewModel.folder.fetchFolder().count, id: \.self) { index in
+                            ForEach(0..<viewModel.folderCounter, id: \.self) { index in
                                 NavigationLink {
                                     MnemonicView(viewIndex: index + 1)
                                 } label: {
-                                    FileListView(index: index + 1, title: "dasfasfsadf")
+                                    FileListView(index: index + 1, title: viewModel.folder.fetchFolder()[index].title)
                                 }
+                                
                             }
                             
                             HStack {

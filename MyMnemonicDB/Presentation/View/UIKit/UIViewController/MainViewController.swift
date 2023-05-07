@@ -8,11 +8,14 @@
 import UIKit
 import SwiftUI
 
+import BottomSheet
+
 final class MainViewController: UIViewController {
     
     private let mainView = MainView()
     private let folderDB = FolderRepository()
     private let mnemonicDB = MnemonicRepository()
+    private var nowFolderDBCount = FolderRepository().fetchFolder().count
     
     override func loadView() {
         view = mainView
@@ -27,7 +30,7 @@ final class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("현재 폴더DB 개수: ", nowFolderDBCount)
         setMnemonicList()
         setAddFolderButton()
         setAddFileButton()
@@ -45,13 +48,19 @@ final class MainViewController: UIViewController {
     }
     
     @objc func folderButtonClicked() {
-        let vc = UIHostingController(rootView: PopupView(action: { }))
-        vc.modalPresentationStyle = .overCurrentContext
-//        let nav = UINavigationController(rootViewController: vc)
-//        nav.modalPresentationStyle = .overCurrentContext
-//        nav.modalTransitionStyle = .crossDissolve
-//        nav.view.backgroundColor = .clear
-        
+        let delegate = BottomSheetTransitioningDelegate(configuration: .default)
+        let vc = UIHostingController(rootView: PopupView(action: {
+            self.dismiss(animated: true)
+            if self.nowFolderDBCount != self.folderDB.fetchFolder().count {
+                self.nowFolderDBCount = self.folderDB.fetchFolder().count
+                self.mainView.mNemonicList.reloadData()
+                print("데이터 변동 감지, 테이블뷰 리로드")
+            } else {
+                print("데이터 변동 없음 테이블뷰 리로드 취소")
+            }
+        }))
+        vc.modalPresentationStyle = .custom
+        vc.transitioningDelegate = delegate
         self.present(vc, animated: true)
     }
     

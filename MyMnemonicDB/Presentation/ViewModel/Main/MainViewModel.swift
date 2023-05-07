@@ -10,6 +10,7 @@ import SwiftUI
 final class MainViewModel: ObservableObject {
     
     @Published var folder = FolderRepository()
+    @Published var folderCounter = FolderRepository().fetchFolder().count
     
     @Published var folderTitle: String = ""
     

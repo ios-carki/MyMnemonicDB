@@ -38,6 +38,7 @@ final class MainViewController: UIViewController {
     
     private func setMnemonicList() {
         mainView.mNemonicList.register(MnemonicCell.self, forCellReuseIdentifier: MnemonicCell.identifier)
+        mainView.mNemonicList.register(CustomMnemonicCellHeader.self, forHeaderFooterViewReuseIdentifier: CustomMnemonicCellHeader.identifier)
         mainView.mNemonicList.delegate = self
         mainView.mNemonicList.dataSource = self
     }
@@ -76,23 +77,61 @@ final class MainViewController: UIViewController {
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
+    //Header
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let headerCell = tableView.dequeueReusableHeaderFooterView(withIdentifier: CustomMnemonicCellHeader.identifier) as? CustomMnemonicCellHeader else { return nil }
+        
+        if section == 0 {
+            headerCell.headerTitle.text = "Fixed"
+        } else {
+            headerCell.headerTitle.text = "Mnemonic"
+        }
+
+        return headerCell
+    }
+    
+    //Section
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
-    //MARK: 임시 - 1번째 섹션 - 폴더 / 2번째 섹션 - 파일
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (section == 0) ? folderDB.fetchFolder().count : mnemonicDB.fetchMnemonic().count
     }
     
+    //CellData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MnemonicCell.identifier, for: indexPath) as? MnemonicCell else { return UITableViewCell() }
         
         cell.cellNumber.text = String(indexPath.row)
-        cell.fileName.text = String("임시: \(indexPath.row)")
+        cell.fileName.text = folderDB.fetchFolder()[indexPath.row].title
         
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(indexPath.row)번째 셀 선택")
+        let vc = UIHostingController(rootView: MnemonicView(viewMode: .editMode))
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        /*
+         let vc = UIHostingController(rootView: PopupView(action: {
+             self.dismiss(animated: true)
+             if self.nowFolderDBCount != self.folderDB.fetchFolder().count {
+                 self.nowFolderDBCount = self.folderDB.fetchFolder().count
+                 self.mainView.mNemonicList.reloadData()
+                 print("데이터 변동 감지, 테이블뷰 리로드")
+             } else {
+                 print("데이터 변동 없음 테이블뷰 리로드 취소")
+             }
+         }))
+         vc.modalPresentationStyle = .custom
+         vc.transitioningDelegate = delegate
+         self.present(vc, animated: true)
+         */
+    }
 }

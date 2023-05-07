@@ -26,7 +26,7 @@ extension Color {
     
     static let placeHolderColor = Color(hex: "#929292")
     
-    static let buttonBackgroundColor = Color(hex: "#F45E22")
+    static let buttonBackgroundColor = Color(hex: "#98E024")
     static let textFieldBackgroundColor = Color(hex: "#2E2E2E")
     
     static let statusFine = Color(hex: "#0AB663")

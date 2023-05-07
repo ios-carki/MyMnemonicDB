@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import SwiftUI
+
+import CustomTextField
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let shared = EGTextFieldConfig.shared
+        shared.defaultTextColor = .white
+        shared.defaultTitleColor = .white
+        shared.titleFont = .medium14()
+        shared.defaultPlaceHolderTextColor = .placeHolderColor
+        shared.defaultBackgroundColor = .textFieldBackgroundColor
+        shared.defaultBorderColor = .buttonBackgroundColor
+        shared.defaultTrailingImageForegroundColor = .white
+        shared.defaultErrorTextColor = .statusAlert
+        shared.errorFont = .medium12()
+        shared.cornerRadius = 12
+        shared.textFieldHeight = 40
+        
+        UITextView.appearance().backgroundColor = UIColor(Color.textFieldBackgroundColor)
+                
         return true
     }
 

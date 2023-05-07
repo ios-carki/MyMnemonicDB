@@ -46,6 +46,8 @@ final class MainView: BaseView {
     let mNemonicList: UITableView = {
         let view = UITableView()
         view.showsVerticalScrollIndicator = false
+        view.backgroundColor = UIColor(Color.backgroundColor)
+        view.rowHeight = 70
         return view
     }()
     

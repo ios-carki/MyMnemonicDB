@@ -53,6 +53,15 @@
         "branch" : "main",
         "revision" : "688bd3688b7765a44a854411645921063f663e11"
       }
+    },
+    {
+      "identity" : "textview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/HumorousGhost/TextView.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1427a8d14d3776d6f7c3315504cf01b723c7f548"
+      }
     }
   ],
   "version" : 2

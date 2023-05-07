@@ -45,6 +45,8 @@
 		C3423D3A29FED0DE00F881B6 /* SUMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3423D3929FED0DE00F881B6 /* SUMainView.swift */; };
 		C3423D3C2A05538400F881B6 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3423D3B2A05538400F881B6 /* View+Extension.swift */; };
 		C3423D422A05579000F881B6 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = C3423D412A05579000F881B6 /* BottomSheet */; };
+		C3423D742A07AC0200F881B6 /* CustomMnemonicCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3423D732A07AC0200F881B6 /* CustomMnemonicCellHeader.swift */; };
+		C3423D7B2A07F29300F881B6 /* TextView in Frameworks */ = {isa = PBXBuildFile; productRef = C3423D7A2A07F29300F881B6 /* TextView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,7 @@
 		C3423D3729FEBE6F00F881B6 /* MnemonicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicCell.swift; sourceTree = "<group>"; };
 		C3423D3929FED0DE00F881B6 /* SUMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUMainView.swift; sourceTree = "<group>"; };
 		C3423D3B2A05538400F881B6 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		C3423D732A07AC0200F881B6 /* CustomMnemonicCellHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMnemonicCellHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 				C3343CAA29F5757E00E08FFE /* CustomTextField in Frameworks */,
 				C3343CA529F5756200E08FFE /* Realm in Frameworks */,
 				C3343CD829FD64BB00E08FFE /* SnapKit in Frameworks */,
+				C3423D7B2A07F29300F881B6 /* TextView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,9 +177,8 @@
 		C3343C9029F574DB00E08FFE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C3423D3129FEB9A000F881B6 /* UIKit */,
+				C3423D752A07BF7100F881B6 /* EditMnemonic */,
 				C3343CD929FD662900E08FFE /* Main */,
-				C3343CC529FD5FBA00E08FFE /* MnemonicView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,8 +303,8 @@
 		C3343CD929FD662900E08FFE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C3423D712A07AB3D00F881B6 /* SwiftUI */,
 				C3423D3029FEB75800F881B6 /* UIKit */,
-				C3423D3929FED0DE00F881B6 /* SUMainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -327,13 +330,6 @@
 		C3423D3029FEB75800F881B6 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		C3423D3129FEB9A000F881B6 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
 				C3423D3329FEB9AD00F881B6 /* UIViewController */,
 				C3423D3229FEB9A900F881B6 /* UIView */,
 			);
@@ -343,6 +339,7 @@
 		C3423D3229FEB9A900F881B6 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				C3423D722A07ABC900F881B6 /* Header */,
 				C3343CB129F5779400E08FFE /* MainView.swift */,
 				C3423D3729FEBE6F00F881B6 /* MnemonicCell.swift */,
 			);
@@ -355,6 +352,30 @@
 				C3423D3429FEB9BB00F881B6 /* MainViewController.swift */,
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		C3423D712A07AB3D00F881B6 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				C3423D3929FED0DE00F881B6 /* SUMainView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		C3423D722A07ABC900F881B6 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				C3423D732A07AC0200F881B6 /* CustomMnemonicCellHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		C3423D752A07BF7100F881B6 /* EditMnemonic */ = {
+			isa = PBXGroup;
+			children = (
+				C3343CC529FD5FBA00E08FFE /* MnemonicView.swift */,
+			);
+			path = EditMnemonic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,6 +401,7 @@
 				C3343CB629FD5F4C00E08FFE /* PopupView */,
 				C3343CD729FD64BB00E08FFE /* SnapKit */,
 				C3423D412A05579000F881B6 /* BottomSheet */,
+				C3423D7A2A07F29300F881B6 /* TextView */,
 			);
 			productName = MyMnemonicDB;
 			productReference = C3343C7229F5741700E08FFE /* MyMnemonicDB.app */;
@@ -415,6 +437,7 @@
 				C3343CB529FD5F4C00E08FFE /* XCRemoteSwiftPackageReference "PopupView" */,
 				C3343CD629FD64BB00E08FFE /* XCRemoteSwiftPackageReference "SnapKit" */,
 				C3423D402A05579000F881B6 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+				C3423D792A07F29300F881B6 /* XCRemoteSwiftPackageReference "TextView" */,
 			);
 			productRefGroup = C3343C7329F5741700E08FFE /* Products */;
 			projectDirPath = "";
@@ -454,6 +477,7 @@
 				C3343CC629FD5FBA00E08FFE /* MnemonicView.swift in Sources */,
 				C3343CB029F576F300E08FFE /* NavigationController.swift in Sources */,
 				C3343C7629F5741700E08FFE /* AppDelegate.swift in Sources */,
+				C3423D742A07AC0200F881B6 /* CustomMnemonicCellHeader.swift in Sources */,
 				C3423D3C2A05538400F881B6 /* View+Extension.swift in Sources */,
 				C3343CCE29FD5FD300E08FFE /* PopupViewModel.swift in Sources */,
 				C3343CDC29FD667300E08FFE /* BaseView.swift in Sources */,
@@ -733,6 +757,14 @@
 				kind = branch;
 			};
 		};
+		C3423D792A07F29300F881B6 /* XCRemoteSwiftPackageReference "TextView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HumorousGhost/TextView.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -765,6 +797,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C3423D402A05579000F881B6 /* XCRemoteSwiftPackageReference "BottomSheet" */;
 			productName = BottomSheet;
+		};
+		C3423D7A2A07F29300F881B6 /* TextView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3423D792A07F29300F881B6 /* XCRemoteSwiftPackageReference "TextView" */;
+			productName = TextView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

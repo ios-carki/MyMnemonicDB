@@ -8,6 +8,8 @@
 import UIKit
 import SwiftUI
 
+import SnapKit
+
 final class MnemonicCell: UITableViewCell {
     static let identifier = "MnemonicCell"
     
@@ -50,6 +52,7 @@ final class MnemonicCell: UITableViewCell {
         }
         
         contentView.addSubview(cellBackground)
+        contentView.backgroundColor = UIColor(Color.backgroundColor)
     }
     
     private func setLayout() {
@@ -57,7 +60,8 @@ final class MnemonicCell: UITableViewCell {
         cellBackground.snp.makeConstraints { make in
             make.center.equalToSuperview()
             make.width.equalToSuperview()
-            make.height.equalTo(50)
+            make.height.equalTo(70)
+            make.verticalEdges.equalTo(safeAreaLayoutGuide).inset(8)
         }
         
         cellNumber.snp.makeConstraints { make in
@@ -67,7 +71,7 @@ final class MnemonicCell: UITableViewCell {
         
         fileName.snp.makeConstraints { make in
             make.centerY.equalTo(cellBackground.safeAreaLayoutGuide)
-            make.leading.equalTo(cellNumber.snp.trailing).offset(-12)
+            make.leading.equalTo(cellNumber.snp.trailing).offset(12)
         }
     }
 }

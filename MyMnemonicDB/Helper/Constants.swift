@@ -11,3 +11,8 @@ enum CustomButtonType {
     case normal
     case clear
 }
+
+enum ViewMode {
+    case editMode
+    case viewMode
+}

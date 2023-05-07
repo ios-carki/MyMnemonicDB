@@ -8,5 +8,6 @@
 import SwiftUI
 
 final class MnemonicViewModel: ObservableObject {
-    @Published var viewState: Bool = false
+    @Published var mNemonicText: String = ""
+    @Published var appTitle: String = ""
 }
